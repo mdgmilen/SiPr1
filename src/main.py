@@ -1,16 +1,20 @@
-# This is a sample Python script.
+from .taskFri06Feb2026_lib import Lib1
+from .taskFri06Feb2026_lib import LinkedMatrix2D
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm2')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print("Program start<<<<<<<<<<<<<<<<<<<<")
+    lib = Lib1()
+    # list1 = [1, 2, 3]
+    # Входна матрица, списък от списъци
+    squareMatrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+    #1 lib.printList(squareMatrix)
+    # print()
+    # lib.printList(list1)
+    linkedList2dMatrix = LinkedMatrix2D(squareMatrix)
+    # linkedList2dMatrix.print_matrix()
+    # linkedList2dMatrix.print_main_diagonal()
+    print("Program end>>>>>>>>>>>>>>>>>>>>>>>")
